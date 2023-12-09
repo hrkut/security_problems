@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var pos = document.URL.indexOf("meno=") + 5;
+    document.write("Ahoj " + decodeURIComponent(document.URL.substring(pos, document.URL.length)));
+    //document.write("Ahoj " + htmlEntities(decodeURIComponent(document.URL.substring(pos, document.URL.length))));
+
+    function htmlEntities(str) {
+        return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+</script>
+
+</body>
+</html>

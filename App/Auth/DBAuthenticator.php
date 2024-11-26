@@ -21,6 +21,7 @@ class DBAuthenticator implements IAuthenticator
 
     /**
      * Verify, if the user is in DB and has his password is correct
+     * Correct password is: heslo
      * @param $login
      * @param $password
      * @return bool
